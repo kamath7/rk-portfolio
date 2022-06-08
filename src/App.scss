@@ -2,6 +2,7 @@ $primary-color: #ffd700;
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
     font-family: 'Roboto Condensed', sans-serif;
@@ -16,3 +17,21 @@ $primary-color: #ffd700;
 input, textarea {
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.loader-hidden {
+    display: none;
+  }
+  
+  .loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+  }
